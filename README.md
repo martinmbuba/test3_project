@@ -1,0 +1,75 @@
+# Akan Name Generator
+
+## Project Description
+The Akan Name Generator is a web-based application that allows users to determine their Akan name based on their birthdate and gender. Akan names are derived from the day of the week a person is born, and this application provides a simple and interactive way to discover your Akan name.
+
+## Author(s)
+- **martin [mbuba ]**  
+  A passionate developer creating interactive and user-friendly web applications.
+
+## Setup Instructions
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/akan-name-generator.git
+2. navigate to the project directory
+    cd akan-name-generator
+3. open the index.html file in your browser to run the application
+
+Here is a sample `README.md` file for your project:
+
+```markdown
+# Akan Name Generator
+
+## Project Description
+The Akan Name Generator is a web-based application that allows users to determine their Akan name based on their birthdate and gender. Akan names are derived from the day of the week a person is born, and this application provides a simple and interactive way to discover your Akan name.
+
+## Author(s)
+- **Diana [Your Last Name]**  
+  A passionate developer creating interactive and user-friendly web applications.
+
+## Setup Instructions
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/akan-name-generator.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd akan-name-generator
+   ```
+3. Open the `index.html` file in your browser to run the application.
+
+## Behavior-Driven Development (BDD)
+### Features
+1. **Input Validation**:
+   - **Given**: A user enters an invalid date or leaves the input fields empty.
+   - **When**: The user submits the form.
+   - **Then**: An error message is displayed prompting the user to correct the input.
+
+2. **Akan Name Generation**:
+   - **Given**: A user enters a valid birthdate and selects a gender.
+   - **When**: The user submits the form.
+   - **Then**: The application calculates the day of the week and displays the corresponding Akan name.
+
+3. **Gender Validation**:
+   - **Given**: A user selects an invalid gender.
+   - **When**: The user submits the form.
+   - **Then**: An error message is displayed prompting the user to select a valid gender.
+
+### Example
+- **Input**: Birthdate: `1995-06-15`, Gender: `Male`
+- **Output**: "Your Akan name is: Kwadwo"
+
+## Technologies Used
+- **HTML**: For structuring the web page.
+- **CSS**: For styling the application.
+- **JavaScript**: For implementing the logic and interactivity.
+
+## Contact Information
+For any inquiries or feedback, feel free to reach out:
+- Email: [martinmbuba4@gmail.com]
+- GitHub: [https://github.com/martinmbuba](https://github.com/martinmbuba)
+
+## License
+This project is licensed under the MIT License.  
+&copy; 2025 martin [mbuba]. All rights reserved.
+```
