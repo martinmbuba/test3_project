@@ -2,11 +2,16 @@ const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function calculateDayOfWeek(day, month, year) {
-    let CC = Math.floor(year / 100); 
-    let YY = year % 100; 
+    if (month <= 2) {
+        month += 12;
+        year--;
+    }
 
-    let d = ((4 * CC - 2 * CC - 1) + (45 * YY) + (1026 * (month + 1)) + day) % 7;
-    return d;
+    let K = year % 100;
+    let J = Math.floor(year / 100);
+
+    let dayOfWeek = (day + Math.floor(13 * (month + 1) / 5) + K + Math.floor(K / 4) + Math.floor(J / 4) - 2 * J) % 7;
+    return dayOfWeek;
 }
 
 document.getElementById("birthdayForm").addEventListener("submit", function(event) {
@@ -42,3 +47,4 @@ document.getElementById("birthdayForm").addEventListener("submit", function(even
 
     resultDiv.innerHTML = `Your Akan name is: <strong>${name}</strong>`;
 });
+
